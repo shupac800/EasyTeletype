@@ -1,5 +1,5 @@
-# EasyTeletype.js
-#### simulate "teletype" style output
+# EasyTeletype
+#### simulate "teletype" style output with JavaScript/jQuery
 ###### David Shuman
 ###### github.com/shupac800
 ###### February 29, 2016
