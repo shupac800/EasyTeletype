@@ -23,8 +23,8 @@ In your HTML file:
 The speed of the teletype can be changed by altering the variables **initialDelay**,  **charDelay**, and **delayBetweenLines**:
 ```
   const initialDelay = 600;       // ms before outputting first line
-  const charDelay = 10;           // delay in ms after each character
-  const delayBetweenLines = 600;  // delay between lines, in ms
+  const charDelay = 50;           // delay in ms after each character
+  const delayBetweenLines = 200;  // delay between lines, in ms
 ```
 sample JavaScript for demo:
 ```

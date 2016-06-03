@@ -24,8 +24,8 @@ function teletype(inputArray) {
   // each object in array "ttyObject" will hold key-value pairs needed by "outputString" function 
 
   const initialDelay = 600;       // ms before outputting first line
-  const charDelay = 10;           // delay in ms after each character
-  const delayBetweenLines = 600;  // delay between lines, in ms
+  const charDelay = 50;           // delay in ms after each character
+  const delayBetweenLines = 200;  // delay between lines, in ms
 
   var ttyObject = [];  // initialize empty array
   ttyObject[0] = {outputAfterMs: initialDelay};  // initialize first array element; first output happens after initial delay 
@@ -57,7 +57,7 @@ function outputString(str, charDelay) {
 
   var intervalID = setInterval(function(){
     s_out += str.charAt(i);  // after each interval, add one character from str to s_out
-    $("#tty-text").html(s);
+    $("#tty-text").html(s_out);
     if (i++ === str.length) {
       $("#tty-text").html(s_out + "</p>");
       clearInterval(intervalID);
